@@ -115,8 +115,103 @@ html {
     border:1px solid #F7FAFF;
     width:439px;
     padding:16px;
-}
+    display:flex;
 
+}
+.search__btn {
+    border:none;
+    background-color: #F7FAFF;
+    color:#000;
+    font-size:2rem;
+    margin-right:20px;
+}
+.content__search > input {
+    flex-grow: 1;
+    border:none;
+    outline: none;
+}
+.content__search > input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    /* identical to box height, or 27px */
+    
+    
+    color: #A3B2C8;
+    
+}
+/* content__banner */
+.content__banner {
+    width:100%;
+    background: #0997FF;
+    height:auto;
+    display:flex;
+    margin-top: 50px;
+    border-radius: 12px;
+    padding:30px; 
+    position: relative;
+}
+.content__banner-text {
+    width:60%;
+}
+.content__banner-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 114%;
+    /* or 55px */
+    
+    
+    color: #FFF9F9;
+}
+.content__banner-descrption {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    /* identical to box height, or 27px */
+    margin:11px auto 26px;
+    
+    color: #FFFFFF;
+    
+}
+.content__banner-btn {
+    padding:19px 34px;
+    border:1px solid;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 169%;
+    /* or 30px */
+    border: 1px solid #0997FF;
+    color: #0997FF;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.content__banner-btn:last-child {
+    border: 1px solid #FFFFFF;
+    background-color: #0997FF;
+    color:#fff;
+    margin-left: 16px;
+}
+.content__banner-btn:first-child:hover {
+    border: 1px solid #FFFFFF;
+    background-color: #0997FF;
+    color:#fff;
+}
+.content__banner-btn:last-child:hover {
+    color: #0997FF;
+    border: 1px solid #0997FF;
+    background-color: #fff;
+}
+.content__banner-img {
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+}
+/* content__listItem */
+.content__listItem {
+    margin-top:50px;
+    
+}
 /* slide */
 .slide {
     border: 1px solid red;
