@@ -19,12 +19,13 @@ html {
 .nav {
     width:381px;
     height:100vh;
-    padding:50px;
+    padding:134px 0px 58px ;
     color:#fff;
     border-right:1px solid rgba(155, 157, 160, 1);
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+    align-items: center;
 }
 .navbar {
     list-style:none;
@@ -42,31 +43,83 @@ html {
     color:rgba(255, 255, 255, 1);
     margin-right:35px;
 }
-.navbar__item:first-child:hover > a > i,
-.navbar__item:first-child:hover > a > span{
+.navbar__item:hover > a > i,
+.navbar__item:hover > a > span{
     color:rgba(9, 151, 255, 1);
+}.navbar__item:nth-child(4),
+.navbar__item:last-child {
+    margin-top:50px;
 }
 /* nav__banner */
 .nav__banner {
     background-image:url('../img/Rectangle 47.png');
-    width:222px;
-    height:264px;
+    width:267px;
+    height:318px;
+    border-radius: 15px;
+    padding:28px;
+}
+.nav__banner-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    /* or 46px */
+    
+    
+    color: #FFF9F9;
+}
+.nav__btn {
+    margin-top:56px;
+    padding:20px 18px;
+    background-color:#fff;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 128%;
+    /* or 20px */
+    
+    
+    color: #000000;
+    
+}
+.nav__btn > span {
+    display:block;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:rgba(179, 63, 255, 1);
+    margin-left:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.nav__btn:hover {
+    background-color: red;
+    cursor: pointer;
+    color:#fff;
 }
 /* content */
 .content {
     flex-grow: 1;
     max-height: 100vh;
     overflow: auto;
+    padding:28px 24px;
+
 }
-.bottom {
-    width: 100%;
-    height: 500px;
-    background-color: red;
-    margin-top: 80vh;
+.content__search {
+    margin-left: 134px;
+    background: #F7FAFF;
+    border-radius: 12px;
+    border:1px solid #F7FAFF;
+    width:439px;
+    padding:16px;
 }
+
 /* slide */
 .slide {
     border: 1px solid red;
-    width:565px;
+    width:470px;
     height:100vh;
 }
