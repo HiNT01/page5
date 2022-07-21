@@ -12,7 +12,7 @@ html {
     background: linear-gradient(135deg, rgba(179, 63, 255, 1), rgba(0, 0, 0),rgba(9, 211, 255, 1));
     backdrop-filter: blur(100px);
     position:relative;
-    z-index: -2;
+    
     padding: 0px 150px;
 }
 .wrapper > img {
@@ -23,15 +23,10 @@ html {
     bottom: 0;
     z-index: -1;
 }
-/* .main {
-    position: absolute;
-    z-index: 0;
-    width:100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-} */
+ .main {
+   position: relative;
+   z-index: 10;
+}
 /* header */
 .header {
     width:100%;

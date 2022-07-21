@@ -11,78 +11,94 @@
     <link rel="stylesheet" href="./sassets/css/font.css">
     <link rel="stylesheet" href="./sassets/css/reset.css">
     <link rel="stylesheet" href="./sassets/css/marketplace.css">
-
+    <link rel="stylesheet" href="./sassets/css/reponsive.css">
 </head>
 <body>
     <div class="main">
         <!-- nav -->
-        <div class="nav">
-            <ul class="navbar">
-                <li class="navbar__item">
-                    <a href="#" class="underline">
-                        <i class="fa-solid fa-house"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="underline">
-                        <i class="fa-solid fa-star"></i>
-                        <span>Marketplace</span>
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="underline">
-                        <i class="fa-solid fa-message"></i>
-                        <span>Messages</span>
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="underline">
-                        <i class="fa-solid fa-list"></i>
-                        <span>My Collection</span>
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="underline">
-                        <i class="fa-solid fa-wallet"></i>
-                        <span>Wallet</span>
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="underline">
-                        <i class="fa-solid fa-gift"></i>
-                        <span>History</span>
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="underline">
-                        <i class="fa-solid fa-gear"></i>
-                        <span>Settings</span>
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="underline">
-                        <i class="fa-solid fa-star"></i>
-                        <span>Resources</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="nav__banner">
-                <h2 class="nav__banner-title">
-                    Earn up to
-                    $100 worth
-                    of NFT
-                </h2>
-                <button class="nav__btn">Learn More <span> <i class="fa-solid fa-angle-right"></i> </span></button>
+        <div class="moblie__left">
+            <button class="nav__btn-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="nav">
+                <ul class="navbar">
+                    <li class="navbar__item">
+                        <a href="./index.html" class="underline">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="underline">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Marketplace</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="underline">
+                            <i class="fa-solid fa-message"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="underline">
+                            <i class="fa-solid fa-list"></i>
+                            <span>My Collection</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="underline">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>Wallet</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="underline">
+                            <i class="fa-solid fa-gift"></i>
+                            <span>History</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="underline">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="underline">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Resources</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__banner">
+                    <h2 class="nav__banner-title">
+                        Earn up to
+                        $100 worth
+                        of NFT
+                    </h2>
+                    <button class="nav__btn">Learn More <span> <i class="fa-solid fa-angle-right"></i> </span></button>
+                </div>
             </div>
         </div>
         <!-- end nav -->
         <!-- content -->
         <div class="content">
-            <form class="content__search">
+            <div class="content__search"> 
+                <button class="content__search-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                
+                <form class="form__search">
+               
                 <button class="search__btn" ><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" placeholder="Search items, collection, accounts">
             </form>
+            <button class="content__search-mess">
+                <i class="fa-solid fa-message"></i>
+            </button>
+        </div>
+           
 
             <div class="content__banner">
                 <div class="content__banner-text">
@@ -418,10 +434,14 @@
         </div>
         <!-- end content -->
         <!-- slide bar -->
-        <div class="right">
+        <div class="moblie__right">
+            <button class="account__btn-close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+             <div class="right">
             <div class="account">
                 <div class="notification">
-                <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-bell"></i>
                     <div class="notification__content">
                         <h3 class="notification__title">
                             thông báo mới nhận
@@ -442,41 +462,26 @@
                 <a href="#" class="account__logo">
                     <img src="./sassets/img/Ellipse 4.png" alt=""> 
                 </a>
-                <a href="#" class="underline account__name">
+                <div href="#" class="account__name underline">
                     Doadesignz
                     <i class="fa-solid fa-caret-down"></i>
-                    <ul class="account__name-list">
-                        <li class="account__name-item">
+                    <ul class="account__list">
+                        <li class="account__list-item">
                             <a href="#" class="underline">
                                 chuyển tài khoản
                             </a>
                         </li>
-                        <li class="account__name-item">
+                        <li class="account__list-item">
                             <a href="#" class="underline">
                                 cài đặt
                             </a>
                         </li>
-                        <li class="account__name-item">
-                            <a href="#" class="underline">log out</a>
+                        <li class="account__list-item">
+                            <a href="./login.html" class="underline">log out</a>
                         </li>
                     </ul>
-                </a>
-                <!-- <a href="#" class="account__name underline">
-                    Doadesignz 
-                    <i class="fa-solid fa-caret-down"></i>
-                    <ul class="account__list">
-                        <li class="account__item">
-                            <a href="#" class="underkline">account1</a>
-                        </li>
-                        <li class="account__item">
-                            <a href="#" class="underkline">account1</a>
-                        </li>
-                        <li class="account__item">
-                            <a href="#" class="underkline">account1</a>
-                        </li>
-                    </ul>
-                    
-                </a> -->
+                </div>
+                
             </div>
             <div class="slide">
                 <div class="slide__offers">
@@ -643,9 +648,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+    </div>
+       
         <!-- end slide -->
 
     </div>
 </body>
+<script src="./sassets/js/home.js"></script>
+
 </html>

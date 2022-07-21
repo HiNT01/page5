@@ -123,6 +123,21 @@ html {
 
 }
 .content__search {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+.content__search > button {
+    display: none;
+    background-color: transparent;
+    border:none;
+    padding:10px 20px;
+    color :rgba(9, 151, 255, 0.8);
+    font-size: 35px;
+    cursor: pointer;
+}
+.form__search {
     margin-left: 134px;
     background: #2E3140;
     border-radius: 12px;
@@ -140,13 +155,13 @@ html {
     margin-right:20px;
     cursor: pointer;
 }
-.content__search > input {
+.form__search > input {
     flex-grow: 1;
     border:none;
     outline: none;
     background: #2E3140;
 }
-.content__search > input::placeholder {
+.form__search > input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 169%;
@@ -190,6 +205,7 @@ html {
     
 }
 .content__banner-btn {
+    min-width: 230px;
     padding:19px 34px;
     border:1px solid;
     border-radius: 8px;
@@ -201,6 +217,7 @@ html {
     color: #0997FF;
     cursor: pointer;
     text-transform: capitalize;
+    
 }
 .content__banner-btn:last-child {
     border: 1px solid #FFFFFF;
@@ -305,7 +322,7 @@ html {
 }
 .product__item:hover {
     transform: scale(1.05);
-    transition: ease .3s;
+    transition: ease 0.5s;
 }
 .product__img {
     position: relative;
@@ -522,14 +539,30 @@ html {
     position: relative;
     color: #D9D9D9;
 }
-.account__name-list {
-    display:block;
-    position: absolute;
-    top: 0;
-    left: 0;
+.account__name:hover .account__list {
+    display: block;
 }
-.account__name-item {
+.account__list {
+    display:none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: rgba(217, 217, 217, 0.6);
+    list-style: none;
+    width: 200px;
+    padding:20px;
+    border-radius: 10px;
+}
+.account__list-item {
+    padding:10px;
+}
+.account__list-item:hover {
+    background-color: #0997FF;
+    border-radius: 10px;
+}
+.account__list-item > a {
     color: #fff;
+    text-transform: capitalize;
 }
 .notification__title {
     color: rgba(9, 151, 255, 1);
@@ -634,7 +667,6 @@ html {
     font-size: 14px;
     line-height: 169%;
     /* or 24px */
-    
     margin-right: 15px;
     color: #C4C4C4;
 }
@@ -646,7 +678,6 @@ html {
     border-radius: 8px;
     padding: 20px;
     width: 100%;
-
     display: flex;
     font-weight: 500;
     font-size: 20px;
@@ -684,7 +715,6 @@ html {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
-   
 }
 .seller__title {
     color: #fff;
@@ -737,4 +767,48 @@ html {
   .sellers::-webkit-scrollbar-thumb:hover,
   .content::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, #2f80ed,#b2ffda);
+  }
+
+  /*  */
+  .account__btn-close {
+    display: none;
+    border: none;
+    background-color: transparent;
+    padding:5px 10px;
+    color:rgba(9, 151, 255, 1);
+    font-size:50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .nav__btn-close {
+    display: none;
+    border: none;
+    background-color: transparent;
+    padding:5px 10px;
+    color:rgba(9, 151, 255, 1);
+    font-size:50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .open__left {
+    display: block !important;
+    transform: translateX(-100%);
+    animation:leftIn linear 0.3s forwards;
+  }
+  .open__right {
+    display: block !important;
+    transform: translateX(100%);
+    animation:rightIn linear 0.3s forwards;
+  }
+  @keyframes rightIn {
+    to {
+        transform: translateX(0%);
+    }
+  }
+  @keyframes leftIn {
+    to {
+        transform: translateX(0%);
+    }
   }

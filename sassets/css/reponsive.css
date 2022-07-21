@@ -1,0 +1,78 @@
+/* tablet */
+@media only screen and (max-width:1200px) {
+    .main {
+        position: relative;
+    }
+    .moblie__right {
+        z-index: 2;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .nav__btn-close {
+        display: block;
+    }
+    .account__btn-close {
+        display: block;
+    }
+    .moblie__left {
+        display: none;
+        z-index: 10;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .nav {
+        background-color: black;
+    }
+    .right {
+        float: right;
+    }
+    .content__search > button {
+        display:block;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width:768px) {
+    .nav__banner {
+        display: none;
+    }
+    .form__search {
+        min-width:0;
+        margin: 0;
+        flex-grow: 1;
+    }
+    .content__banner-btns {
+        flex-wrap: wrap;
+    }
+    .content__banner-btn:last-child {
+        margin: 10px 0px 0px 0px;
+
+    }
+    .content__banner-text{
+        z-index: 1;
+    }
+    .content__listItem-wrapper {
+        flex-wrap: wrap;
+    }
+    .content__listItem-item {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .product {
+        flex-wrap: wrap;
+    }
+    .product__item {
+        width:100%;
+        margin-bottom: 30px;
+    }
+}
