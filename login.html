@@ -8,23 +8,72 @@
     <!-- css -->
     <link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./sassets/css/reset.css">
+    <link rel="stylesheet" href="./sassets/css/style.css">
+
     <link rel="stylesheet" href="./sassets/css/login.css">
 </head>
 <body>
     
-        <div class="main__login">
-            <form action="#" class="form">
-            <h1 class="form__title">login</h1>
-            <label for="username">user name</label>
-            <input type="text" name="" id="#username" placeholder="nhập tài khoản của bạn">
-            <label for="password">password</label>
-            <input type="password" name="" id="#password">
-            <input type="submit" name="" id="" value="login" class="form__sb">
-            <p class="form__forgot">forgot password? <span>click here</span></p>
-            <a class="underline form__link" href="#"> <span><i class="fa-brands fa-facebook"></i></span> login width facebook</a>
-            <a class="underline form__link" href="#"> <span><i class="fa-brands fa-google"></i></span> login width google</a>
+    
+    <div class="wrapper">
+        <img src="./sassets/img/Group.png" alt="">
+    
+
+      <div class="main">
+         
+        <!-- header -->
+        <div class="header">
+            <a href="#" class="logoweb underline">
+                <div class="logoweb__cricle">
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1 class="logoweb__title">futuri</h1>
+            </a>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="#" class="underline">Explore</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./marketplace.html" class="underline">Marketplace</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="underline">Community</a>
+                </li>
+            </ul>
+            <button class="btn">Connect Wallet</button>
+        </div>
+        <div class="form__wrapper">
+            <form action="#" class="form__login">
+              <h2 class="form__logi-title">
+                đăng nhập
+              </h2>
+              <div class="form__login-btns">
+                <button type="submit" class="form__login-btn form__login-btn--fb">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <span>facebook</span>
+                </button>
+                <button type="submit" class="form__login-btn form__login-btn--gg">
+                  <i class="fa-brands fa-google"></i>
+                  <span> google</span>
+                </button>
+              </div>
+      
+              <label for="user">Email / Số điện thoại</label>
+              <input type="text" id="user" placeholder="Email / Số điện thoại">
+              <label for="pass">Mật khẩu</label>
+              <input type="password" placeholder="Mật khẩu" id="pass">
+              <a href="#" class="underline">Quên mật khẩu?</a>
+              <button type="submit"  class="form__login-submit">
+                đăng nhập
+                <span></span><span></span><span></span><span></span>
+              </button>
+      
+              <span>Chưa có tài khoản? <a href="./singin.html"> Đăng ký tại đây </a> </span>
             </form>
         </div>
-    
+      </div>
+
+    </div>
 </body>
 </html>

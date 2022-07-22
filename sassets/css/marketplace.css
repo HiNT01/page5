@@ -126,7 +126,7 @@ html {
     width:100%;
     display: flex;
     justify-content: space-between;
-    background-color: #000;
+    background-color:rgba(28, 30, 42, 1);
 }
 .content__search > button {
     display: none;
@@ -506,7 +506,7 @@ html {
      align-items:center;
      justify-content: center;
      color:#fff;
-    background-color: #000;
+     background-color:rgba(28, 30, 42, 1);
 }
 .notification {
     margin-right:27px;
@@ -614,6 +614,7 @@ html {
     height:calc(100vh - 134px);
     background: #2E3140;
     padding: 46px 40px;
+    overflow: hidden;
 }
 .slide__offers {
     width:100%;
