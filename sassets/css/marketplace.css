@@ -494,7 +494,7 @@ html {
 }
 /* right */
 .right {
-    width:470px;
+    max-width:470px;
     height:100vh;
 }
 
@@ -506,7 +506,7 @@ html {
      align-items:center;
      justify-content: center;
      color:#fff;
-
+    background-color: #000;
 }
 .notification {
     margin-right:27px;
@@ -778,8 +778,9 @@ html {
     color:rgba(9, 151, 255, 1);
     font-size:50px;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
   }
   .nav__btn-close {
     display: none;
@@ -791,6 +792,7 @@ html {
     position: absolute;
     top: 20px;
     left: 20px;
+    cursor: pointer;
   }
   .open__left {
     display: block !important;
