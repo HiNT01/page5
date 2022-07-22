@@ -30,3 +30,12 @@ let modalconatainerRight = document.querySelector('.right')
 modalconatainerRight.addEventListener('click',function(event) {
     event.stopPropagation()
 })
+
+//  menu dropp
+
+
+// modalMenu.addEventListener('click',hiddenMenu)
+// let modalconatainer = document.querySelector('.nav')
+// modalconatainer.addEventListener('click',function(event) {
+//     event.stopPropagation()
+// })

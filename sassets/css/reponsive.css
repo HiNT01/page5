@@ -1,7 +1,14 @@
 /* tablet */
 @media only screen and (max-width:1200px) {
+    .wrapper {
+        padding:0px 70px;
+    }
     .main {
         position: relative;
+        width: 100%;
+    }
+    .header {
+        padding: 20px;
     }
     .moblie__right {
         z-index: 2;
@@ -39,12 +46,46 @@
     .content__search > button {
         display:block;
     }
+    .donor__item {
+        width:100%;
+        margin-bottom: 20px;
+    }
+   
 }
 
 /* mobile */
 @media only screen and (max-width:768px) {
+    .wrapper {
+        padding:0px 20px;
+    }
+    .banner__content {
+        width:100%;
+    }
+    .banner__img {
+        
+        display: none;
+    }
+    .nav1 {
+        width:100%;
+        display:block;
+        position: absolute;
+        /* top:100px; */
+        transform: translateY(-100%);
+        top: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.5);
+        padding: 20px;
+        border-radius: 8px;
+    }
+  
     .nav__banner {
         display: none;
+    }
+    .btn--header {
+        display: none;
+    }
+    .content__search-menu {
+        display: block;
     }
     .form__search {
         min-width:0;
@@ -101,11 +142,36 @@
         left: 20px;
         transform: translateY(100%);
         z-index: 5;
+        background-color: rgba(0,0,0,0.7);
+        padding: 5px 10px;
+        border-radius: 8px;
     }
     .chart__user > img {
         cursor: pointer;
     }
     .chart__user > img:hover ~  .chart__user-info {
         display: block;
+    }
+    .nav__btn-close {
+        display: block;
+    }
+    .notification__content {
+        left: -50px;
+    }
+    .notification__content::after {
+        right: 123px;
+    }
+    .account__list {
+        left: -40px;
+    }
+    .nav1__item {
+        margin-bottom: 10px;
+    }
+    .nav1__item:hover a {
+        color: violet;
+        box-shadow: #fff 0px 1px 4px;
+    }
+    .nav1__item:last-child {
+        margin: 0;
     }
 }
